@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'Museo Sans';
+    src: url(fonts1/Museo );
+}
+
+
+body{
+    margin: 0%;
+   
+}
+
+
+header {
+    position: relative;
+    top: 0;
+    width: 1180px;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    background-color: white;
+}
+
+     
+header .menu a {
+ font-family:m;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding:  20px;
+    align-items: left;
+
+    transition: 0.3s;
+   text-align: center;
+}
+
+
+
+header .menu a:hover {
+    margin-bottom: 1px;
+    background: bl;
+}
+
+label {
+    display: none;
+}
+
+#check {
+    z-index: 3;
+    display: none;
+}
+
+@media (max-width: 960px) {
+    header .menu {
+        display: none;
+    }
+
+    label {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.3s;
+        transition-property: color;
+        background-color: blue;
+    }
+
+    label:hover {
+        color: #fff;
+    }
+
+    label .close-btn {
+        display: none;
+    }
+
+    #check:checked ~ header .menu {
+        z-index: 2;
+        position: fixed;
+        background: rgba(229, 246, 223, 0.9);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        margin-bottom: 5px;
+    }
+
+    #check:checked ~ header .menu a {
+        font-weight: 700;
+        margin-right: 0;
+        margin-bottom: 50px;
+        letter-spacing: 10px;
+    }
+
+    #check:checked ~ header label .menu-btn {
+        display: none;
+    }
+
+    #check:checked ~ header label .close-btn {
+        z-index: 2;
+        display: block;
+        position: fixed;
+    }
+
+    label .menu-btn {
+        position: absolute;
+    }
+
+    header .logo {
+        position: absolute;
+    }
+}
+
+
+.container-logo .logo{
+     width: 50%;
+    height: auto;
+}
+
+.banner-card{
+    position: relative;
+   
+   
+}
+.banner-card img{
+
+   width: 100%;
+    height: auto;
+}
+
+.banner-text{
+
+    position: absolute;
+    top: 35%;
+    color: #fff;
+    
+   width: 50%;
+   height: 50%;
+    left:30%;
+  
+
+}
+
+.banner-text h1{
+
+    position: absolute;
+   
+    font-size: 60px;
+    letter-spacing: -1px;
+    line-height: 75px;
+    color: #ffffff;
+font-family: museosans;
+  margin: auto;
+
+   
+   
+   
+}
